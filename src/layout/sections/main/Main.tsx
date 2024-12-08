@@ -8,7 +8,7 @@ export const Main = () => {
                 <h2>I am Svetlana Dyablo</h2>
                 <h1>A Web Developer.</h1>
             </div>
-            <img src="./../../assets/images/phtoto.jpg" alt="" />
+            <img src="./../../assets/images/photo.jpg" alt="" />
         </div>
     );
 };
