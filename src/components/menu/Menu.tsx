@@ -12,7 +12,7 @@ export const Menu = () => {
                     <a href="">Skills</a>
                 </li>
                 <li>
-                    <a href="">Works hover</a>
+                    <a href="">Works</a>
                 </li>
                 <li>
                     <a href="">Testimony</a>
