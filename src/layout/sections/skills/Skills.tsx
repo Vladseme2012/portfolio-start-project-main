@@ -9,7 +9,7 @@ export const Skills = () => {
     return (
         <StyledSectionSkills>
             <SectionTitle>My Skills</SectionTitle>
-            <FlexWrapper>
+            <FlexWrapper wrap={'wrap'} justify={'space-between'}>
                 <Skill
                     iconId={'tag'}
                     title={'html5'}
@@ -57,4 +57,7 @@ export const Skills = () => {
     );
 };
 
-const StyledSectionSkills = styled.div``;
+const StyledSectionSkills = styled.div`
+  width: 45%
+  margin: 10px;
+`;
