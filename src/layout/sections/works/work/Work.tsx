@@ -27,7 +27,7 @@ const StyledWork = styled.div`
     max-width: 540px;
 `;
 
-const Image = styled.div`
+const Image = styled.img`
 width: 100%
 height: 260px;
 object-fit: cover;
