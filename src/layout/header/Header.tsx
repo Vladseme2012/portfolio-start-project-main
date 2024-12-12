@@ -2,14 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { Logo } from '../../components/logo/Logo';
 import { Menu } from '../../components/menu/Menu';
+import { Container } from '../../components/Container';
 
 const itemsMenu = ['Home', 'Skills', 'Works', 'Testimony', 'Contact'];
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo />
-            <Menu items={itemsMenu} />
+            <Container>
+                <Logo />
+                <Menu items={itemsMenu} />
+            </Container>
         </StyledHeader>
     );
 };
