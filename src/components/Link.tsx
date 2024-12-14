@@ -2,11 +2,14 @@ import styled from 'styled-components';
 import { theme } from '../styles/Theme';
 
 export const Link = styled.a`
+    position: relative;
     padding: 10px;
     font-weight: 400;
     font-style: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    z-index: 0;
+    
     &:hover {
         &::before {
             height: 10px;
