@@ -33,6 +33,8 @@ list-style: none;
 button{
   background-color: unset;
   border: unset;
+  cursor: pointer;
+  color: ${theme.colors.colorText}
 }
 
 section {
