@@ -54,7 +54,7 @@ const ImageWrapper = styled.div`
             top: 0;
             bottom: 0;
             content: '';
-            background: rgba(0, 0, 0, 0.3);
+            background: #0000004c;
             backdrop-filter: blur(8px);
         }
         ${Button} {
