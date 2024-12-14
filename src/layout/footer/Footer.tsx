@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../components/icon/Icon';
+import { theme } from '../../styles/Theme';
 
 export const Footer = () => {
     return (
@@ -59,32 +60,45 @@ export const Footer = () => {
     );
 };
 
-const SocialName = styled.h3`
-    color: red;
-    text-align: center;
+const StyledFooter = styled.footer`
+    padding: 40px 0;
+    background-color: ${theme.colors.primaryBg};
 `;
 
-const StyledFooter = styled.footer`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+const SocialName = styled.span`
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
 `;
 
 const SocialList = styled.ul`
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
+    gap: 20px;
+    margin: 30px 0;
 `;
 const SocialItem = styled.li``;
 
 const SocialIconLink = styled.a`
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    list-style: none;
+    border-color: #ffffff19;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+
+    color: ${theme.colors.accent};
+
+    &:hover {
+        color: ${theme.colors.primaryBg};
+        transform: translateY(-4px);
+    }
 `;
 
 const SocialCopyright = styled.small`
-    color: red;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.5;
 `;
