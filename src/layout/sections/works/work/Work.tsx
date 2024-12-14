@@ -22,10 +22,14 @@ export const Work = (props: ImagePropsType) => {
     );
 };
 
-const StyledWork = styled.section`
+const StyledWork = styled.article`
     background-color: #1f1f20;
     width: 100%;
     max-width: 540px;
+
+    ${Link} {
+        padding: 10px 0;
+    }
 `;
 
 const Image = styled.img`
