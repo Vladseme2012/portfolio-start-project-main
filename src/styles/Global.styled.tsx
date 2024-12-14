@@ -57,5 +57,6 @@ section:nth-of-type(odd) {
   p{
     font-weight: 400;
     font-style: 14px;
+    line-height: 1.4;
   }
 `;
