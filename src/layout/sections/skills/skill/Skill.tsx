@@ -55,5 +55,4 @@ const SkillTitle = styled.h3`
 
 const SkillDescription = styled.p`
     text-align: center;
-    line-height: 1.4;
 `;
