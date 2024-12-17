@@ -9,7 +9,11 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={'center'} justify={'space-between'}>
+                <FlexWrapper
+                    align={'center'}
+                    justify={'space-between'}
+                    wrap={'wrap'}
+                >
                     <div>
                         <WelcomeText>Hi There</WelcomeText>
                         <Name>
@@ -76,6 +80,11 @@ const PhotoWrapper = styled.div`
         height: 470px;
         border: 5px solid ${theme.colors.accent};
         z-index: -1;
+        
+        @media ${theme.media.mobile} {
+            width: 320px;
+            height: 400px;
+        }
     }
 `;
 
@@ -83,4 +92,9 @@ const Photo = styled.img`
     width: 350px;
     height: 450px;
     object-fit: cover;
+
+    @media (${theme.media.mobile}) {
+        width: 310px;
+        height: 380px;
+    }
 `;
