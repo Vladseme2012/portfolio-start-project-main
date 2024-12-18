@@ -5,11 +5,18 @@ type FontPropsType = {
     weight?: number;
     color?: string;
     lineHeight?: number;
-    fontMin: number;
-    fontMax: number;
+    fontMin?: number;
+    fontMax?: number;
 };
 
-export const font = ({ family, weight, color, lineHeight, fontMin, fontMax }: FontPropsType) => `
+export const font = ({
+    family,
+    weight,
+    color,
+    lineHeight,
+    fontMin,
+    fontMax,
+}: FontPropsType) => `
   font-family: ${family || 'Poppins'};
   font-weight: ${weight || 400};
   color: ${color || theme.colors.colorText};
