@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 import { theme } from '../styles/Theme';
+import { font } from '../styles/Common';
 
 export const SectionTitle = styled.h2`
+    ${font({
+        family: "'Josefin Sans', sans-serif",
+        weight: 60,
+        fontMax: 36,
+        fontMin: 30,
+    })};
+
     position: relative;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
-    font-style: 36px;
     letter-spacing: 5px;
     text-align: center;
     margin-bottom: 90px;
@@ -20,5 +25,9 @@ export const SectionTitle = styled.h2`
         width: 55px;
         height: 1px;
         background-color: ${theme.colors.accent};
+
+        @media ${theme.media.mobile} {
+            bottom: -24px;
+        }
     }
 `;
