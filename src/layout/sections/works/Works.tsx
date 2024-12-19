@@ -37,4 +37,8 @@ export const Works = () => {
     );
 };
 
-const StyledSectionWorks = styled.section``;
+const StyledSectionWorks = styled.section`
+    ${FlexWrapper} {
+        gap: 30px;
+    }
+`;
