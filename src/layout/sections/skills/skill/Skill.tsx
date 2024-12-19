@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FlexWrapper } from '../../../../components/FlexWrapper';
 import { Icon } from '../../../../components/icon/Icon';
+import { theme } from '../../../../styles/Theme';
 
 type SkillPropsType = {
     iconId: string;
@@ -24,8 +25,13 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const SkillArticle = styled.article`
-    max-width: 380px;
+    max-width: 330px;
     padding: 62px 20px 40px;
+    flex-grow: 1;
+
+    @media (${theme.media.mobile}) {
+        padding: 62px 0 40px;
+    }
 `;
 
 export const IconWrapper = styled.div`
