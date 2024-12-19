@@ -8,7 +8,7 @@ export const TabMenu = (props: { items: Array<string> }) => {
             <ul>
                 {props.items.map((item, index) => (
                     <ListItem key={item[index]}>
-                        <Link href="">item</Link>
+                        <Link href="">{item}</Link>
                     </ListItem>
                 ))}
             </ul>
@@ -17,11 +17,12 @@ export const TabMenu = (props: { items: Array<string> }) => {
 };
 
 const StyledTabMenu = styled.nav`
-    margin-bottom: 40px;
     ul {
+        max-width: 352px;
+        width: 100%;
         display: flex;
-        justify-content: center;
-        gap: 20px;
+        justify-content: space-between;
+        margin-bottom: 0 auto 40px;
     }
 `;
 
