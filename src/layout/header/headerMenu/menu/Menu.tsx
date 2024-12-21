@@ -3,7 +3,7 @@ import { S } from '../HeaderMenu_Styles';
 
 export const Menu: React.FC<{ items: Array<string> }> = (props) => {
     return (
-        <ul>
+        <S.List>
             {props.items.map((item, index) => (
                 <S.ListItem key={item[index]}>
                     <S.Link href="#">
@@ -17,6 +17,6 @@ export const Menu: React.FC<{ items: Array<string> }> = (props) => {
                     </S.Link>
                 </S.ListItem>
             ))}
-        </ul>
+        </S.List>
     );
 };
