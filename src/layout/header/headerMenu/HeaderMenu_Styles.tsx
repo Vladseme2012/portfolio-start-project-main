@@ -29,6 +29,8 @@ const Mask = styled.span`
     }
 `;
 
+const List = styled.ul``;
+
 const ListItem = styled.li`
     position: relative;
     &::before {
@@ -159,6 +161,7 @@ const DesktopMenu = styled.nav`
 export const S = {
     Link,
     Mask,
+    List,
     ListItem,
     MobileMenu,
     BurgerButton,
