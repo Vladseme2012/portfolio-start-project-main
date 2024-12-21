@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../components/icon/Icon';
 import { theme } from '../../styles/Theme';
+import { font } from '../../styles/Common';
 
 export const Footer = () => {
     return (
@@ -66,9 +67,13 @@ const StyledFooter = styled.footer`
 `;
 
 const SocialName = styled.span`
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    font-size: 22px;
+    ${font({
+        family: "'Josefin Sans', sans-serif",
+        weight: 700,
+        fontMin: 16,
+        fontMax: 22,
+    })}
+
     letter-spacing: 3px;
 `;
 
