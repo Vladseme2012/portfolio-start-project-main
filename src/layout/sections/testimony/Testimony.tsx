@@ -1,15 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { Icon } from '../../../components/icon/Icon';
 import { Slider } from '../../../components/slider/Slider';
 import { FlexWrapper } from '../../../components/FlexWrapper';
-import { S } from '../skills/Skills_styles';
 import { Container } from '../../../components/Container';
+import { St } from './Testimony_Styles';
 
-export const Testimony = () => {
+export const Testimony: React.FC = () => {
     return (
-        <StyledTestimony>
+        <St.Testimony>
             <Container>
                 <SectionTitle>Testimony</SectionTitle>
                 <FlexWrapper direction={'column'} align={'center'}>
@@ -19,14 +18,6 @@ export const Testimony = () => {
                     <Slider />
                 </FlexWrapper>
             </Container>
-        </StyledTestimony>
+        </St.Testimony>
     );
 };
-
-const StyledTestimony = styled.section`
-    min-height: 50vh;
-
-    ${S.IconWrapper} {
-        margin: 28px 0 72px;
-    }
-`;
