@@ -5,11 +5,11 @@ import { HeaderMenu } from './headerMenu/HeaderMenu';
 import { Container } from '../../components/Container';
 import { FlexWrapper } from '../../components/FlexWrapper';
 import { theme } from '../../styles/Theme';
-import { MobileMenu } from './mobileMenu/mobileMenu';
+import { MobileMenu } from './mobileMenu/MobileMenu';
 
 const itemsMenu = ['Home', 'Skills', 'Works', 'Testimony', 'Contact'];
 
-export const Header = () => {
+export const Header:React.FC = () => {
     return (
         <StyledHeader>
             <Container>
