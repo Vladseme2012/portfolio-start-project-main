@@ -4,7 +4,7 @@ import { S } from '../HeaderMenu_Styles';
 
 export const MobileMenu: React.FC<{
     items: Array<string>;
-}> = (props: { items: Array<string> }) => {
+}> = (props) => {
     return (
         <S.MobileMenu>
             <S.BurgerButton isOpen={true}>
