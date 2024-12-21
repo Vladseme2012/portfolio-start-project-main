@@ -46,9 +46,7 @@ const skillsData: Array<SkillsDataType> = [
     },
 ];
 
-export const Skills: React.FC<Array<SkillsDataType>> = (
-    props: Array<SkillsDataType>
-) => {
+export const Skills: React.FC = () => {
     return (
         <S.SectionSkills>
             <Container>
