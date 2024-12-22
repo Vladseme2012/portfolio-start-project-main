@@ -5,7 +5,7 @@ import { font } from '../styles/Common';
 export const SectionTitle = styled.h2`
     ${font({
         family: "'Josefin Sans', sans-serif",
-        weight: 60,
+        weight: 600,
         fontMax: 36,
         fontMin: 30,
     })};
