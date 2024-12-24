@@ -5,7 +5,7 @@ export const Menu: React.FC<{ items: Array<string> }> = (props) => {
     return (
         <S.List>
             {props.items.map((item, index) => (
-                <S.ListItem key={item[index]}>
+                <S.ListItem key={index}>
                     <S.Link href="#">
                         {item}
                         <S.Mask>
