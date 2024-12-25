@@ -17,7 +17,10 @@ const MainTitle = styled.h1`
         weight: 400,
         fontMax: 27,
         fontMin: 20,
-    })}
+    })};
+    p {
+        display: none;
+    }
 `;
 
 const Name = styled.h2`
