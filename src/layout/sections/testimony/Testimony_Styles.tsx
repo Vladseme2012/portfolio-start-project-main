@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { S } from '../skills/Skills_styles';
+import { S } from '../skills/Skills_Styles';
 
 const Testimony = styled.section`
     min-height: 50vh;
