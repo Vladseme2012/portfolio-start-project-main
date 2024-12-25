@@ -3,7 +3,7 @@ import { Container } from '../../../components/Container';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { Skill } from './skill/Skill';
-import { S } from './Skills_styles';
+import { S } from './Skills_Styles';
 
 type SkillsDataType = {
     iconId: string;
