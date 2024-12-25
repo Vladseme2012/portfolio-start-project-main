@@ -21,7 +21,9 @@ export const Work: React.FC<ImagePropsType> = (props) => {
             <S.Description>
                 <S.Title>{props.title}</S.Title>
                 <S.Text>{props.text}</S.Text>
-                <Link href={props.href}>demo</Link>
+                <Link active href={props.href}>
+                    demo
+                </Link>
                 <Link href={props.href}>code</Link>
             </S.Description>
         </S.Work>
