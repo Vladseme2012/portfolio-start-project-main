@@ -6,6 +6,7 @@ const Slider = styled.div`
     flex-direction: column;
     align-items: center;
     max-width: 500px;
+    width: 100%;
     border: 1px solid red;
 `;
 
@@ -37,8 +38,13 @@ const Pagination = styled.div`
             margin: 5px;
         }
 
+        &:hover {
+            background-color: ${theme.colors.accent};
+        }
+
         &.active {
             background-color: ${theme.colors.accent};
+            width: 20px;
         }
     }
 `;
