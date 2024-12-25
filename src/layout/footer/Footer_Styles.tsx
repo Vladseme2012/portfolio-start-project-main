@@ -1,8 +1,12 @@
-import styled from "styled-components";
-import { theme } from "../../styles/Theme";
-import { font } from "../../styles/Common";
+import styled from 'styled-components';
+import { theme } from '../../styles/Theme';
+import { font } from '../../styles/Common';
 
 const Footer = styled.footer`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 40px 0;
     background-color: ${theme.colors.primaryBg};
 `;
@@ -30,6 +34,7 @@ const SocialIconLink = styled.a`
     justify-content: center;
     align-items: center;
     border-color: #ffffff19;
+    background-color: #ffffff19;
     border-radius: 50%;
     width: 35px;
     height: 35px;
@@ -50,10 +55,10 @@ const SocialCopyright = styled.small`
 `;
 
 export const S = {
-  Footer,
-  SocialName,
-  SocialList,
-  SocialItem,
-  SocialIconLink,
-  SocialCopyright,
+    Footer,
+    SocialName,
+    SocialList,
+    SocialItem,
+    SocialIconLink,
+    SocialCopyright,
 };
