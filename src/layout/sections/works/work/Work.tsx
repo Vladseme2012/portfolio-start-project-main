@@ -11,7 +11,7 @@ type ImagePropsType = {
     href?: string;
 };
 
-export const Work: React.FC<ImagePropsType> = (props: ImagePropsType) => {
+export const Work: React.FC<ImagePropsType> = (props) => {
     return (
         <S.Work>
             <S.ImageWrapper>
