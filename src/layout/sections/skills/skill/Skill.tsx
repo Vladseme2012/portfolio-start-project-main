@@ -9,7 +9,7 @@ type SkillPropsType = {
     text: string;
 };
 
-export const Skill: React.FC<SkillPropsType> = (props: SkillPropsType) => {
+export const Skill: React.FC<SkillPropsType> = (props) => {
     return (
         <S.SkillArticle>
             <FlexWrapper direction={'column'} align={'center'}>
