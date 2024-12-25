@@ -1,4 +1,6 @@
 import React from 'react';
+import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 import photo from './../../../assets/images/photo.jpg';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
@@ -18,11 +20,31 @@ export const Main: React.FC = () => {
                         <S.Name>
                             I am <span>Svetlana Dyablo</span>
                         </S.Name>
-                        <S.MainTitle>A Web Developer.</S.MainTitle>
+                        <S.MainTitle>
+                            <p>A Web Developer.</p>
+                            <Typewriter
+                                options={{
+                                    strings: ['A Web Developer.'],
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 100,
+                                }}
+                            />
+                        </S.MainTitle>
                     </div>
-                    <S.PhotoWrapper>
-                        <S.Photo src={photo} alt="photo" />
-                    </S.PhotoWrapper>
+                    <Tilt
+                        className="parallax-effect-img"
+                        tiltMaxAngleX={40}
+                        tiltMaxAngleY={40}
+                        perspective={800}
+                        transitionSpeed={1500}
+                        scale={1.1}
+                        gyroscope={true}
+                    >
+                        <S.PhotoWrapper>
+                            <S.Photo src={photo} alt="photo" />
+                        </S.PhotoWrapper>
+                    </Tilt>
                 </FlexWrapper>
             </Container>
         </S.Main>
