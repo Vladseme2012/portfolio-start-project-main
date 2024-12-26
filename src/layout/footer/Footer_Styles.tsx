@@ -3,6 +3,7 @@ import { theme } from '../../styles/Theme';
 import { font } from '../../styles/Common';
 
 const Footer = styled.footer`
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
