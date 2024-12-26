@@ -6,6 +6,7 @@ import { Button } from '../../../components/Button';
 
 // works
 const SectionWorks = styled.section`
+    position: relative;
     ${FlexWrapper} {
         gap: 30px;
     }
