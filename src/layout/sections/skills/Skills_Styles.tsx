@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { theme } from '../../../styles/Theme';
 
 // skills
-const SectionSkills = styled.section``;
+const SectionSkills = styled.section`
+    position: relative;
+`;
 
 // skill
 const SkillArticle = styled.article`
