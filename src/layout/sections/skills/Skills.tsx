@@ -48,7 +48,7 @@ const skillsData: Array<SkillsDataType> = [
 
 export const Skills: React.FC = () => {
     return (
-        <S.SectionSkills>
+        <S.Skills id={'skills'}>
             <Container>
                 <SectionTitle>My Skills</SectionTitle>
                 <FlexWrapper wrap={'wrap'} justify={'space-between'}>
@@ -62,6 +62,6 @@ export const Skills: React.FC = () => {
                     ))}
                 </FlexWrapper>
             </Container>
-        </S.SectionSkills>
+        </S.Skills>
     );
 };
