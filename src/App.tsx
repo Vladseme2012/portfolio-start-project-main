@@ -8,6 +8,7 @@ import { Testimony } from './layout/sections/testimony/Testimony';
 import { Contact } from './layout/sections/contacts/Contact';
 import { Slogan } from './layout/sections/slogan/Slogan';
 import { Footer } from './layout/footer/Footer';
+import { GoToBtn } from './components/goTopBtn/GoToBtn';
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
             <Contact />
             <Slogan />
             <Footer />
+            <GoToBtn />
         </div>
     );
 }
