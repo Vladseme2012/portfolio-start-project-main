@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from '../../../styles/Theme';
 
 // skills
-const SectionSkills = styled.section`
+const Skills = styled.section`
     position: relative;
 `;
 
@@ -47,7 +47,7 @@ const SkillDescription = styled.p`
 `;
 
 export const S = {
-    SectionSkills,
+    Skills,
     SkillArticle,
     IconWrapper,
     SkillTitle,
