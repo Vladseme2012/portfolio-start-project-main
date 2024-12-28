@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { AnimatePresence, motion } from 'motion/react';
 import socialNetwork from './../../../assets/images/social-network.png';
 import counter from './../../../assets/images/counter.png';
 import { Container } from '../../../components/Container';
