@@ -7,7 +7,6 @@ const Slider = styled.div`
     align-items: center;
     max-width: 500px;
     width: 100%;
-    border: 1px solid red;
 `;
 
 const Slide = styled.div`
