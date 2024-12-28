@@ -14,7 +14,7 @@ export const GoToBtn: React.FC = () => {
                 setShowBtn(!showBtn);
             }
         });
-    }, [showBtn]);
+    }, []);
 
     return (
         <>
