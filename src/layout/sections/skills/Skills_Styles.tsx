@@ -17,7 +17,7 @@ const SkillArticle = styled.article`
     }
 `;
 
-export const IconWrapper = styled.div`
+const IconWrapper = styled.div`
     position: relative;
     &::before {
         position: absolute;
