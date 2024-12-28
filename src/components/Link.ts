@@ -26,13 +26,14 @@ export const Link = styled.a<{ active?: boolean }>`
         content: '';
         height: 0;
         z-index: -1;
-        transition: ${theme.animations.transition}
-            ${(props) =>
-                props.active &&
-                css<{ active?: boolean }>`
-                    & {
-                        height: 10px;
-                    }
-                `};
+        transition: ${theme.animations.transition};
+
+        ${(props) =>
+            props.active &&
+            css<{ active?: boolean }>`
+                & {
+                    height: 10px;
+                }
+            `};
     }
 `;
