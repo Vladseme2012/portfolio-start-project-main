@@ -39,8 +39,8 @@ const SocialIconLink = styled.a`
     border-radius: 50%;
     width: 35px;
     height: 35px;
-
     color: ${theme.colors.accent};
+    transition: ${theme.animations.transition};
 
     &:hover {
         color: ${theme.colors.primaryBg};
