@@ -135,23 +135,30 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     bottom: 0;
     background-color: rgba(31, 31, 32, 0.9);
     z-index: 999;
-    display: none;
-
-    ${(props) =>
-        props.isOpen &&
-        css<{ isOpen: boolean }>`
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        `}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 0.9s ease-in-out;
 
     ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 10px;
+        transition: 0.9s ease-in-out;
     }
+
+    ${(props) =>
+        props.isOpen &&
+        css<{ isOpen: boolean }>`
+            transform: translateY(-100%);
+
+            & ul {
+                gap: 40px;
+            }
+        `}
 `;
 
 // DeskTopMenu
