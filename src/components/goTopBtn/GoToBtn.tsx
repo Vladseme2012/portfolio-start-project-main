@@ -26,9 +26,9 @@ export const GoToBtn: React.FC = () => {
                 >
                     <Icon
                         iconId={'arrowGoTop'}
-                        width={'30'}
-                        height={'30'}
-                        viewBox={'0 0 30 30'}
+                        width={'16'}
+                        height={'15'}
+                        viewBox={'0 0 16 15'}
                     />
                 </S.GoTopBtn>
             )}
