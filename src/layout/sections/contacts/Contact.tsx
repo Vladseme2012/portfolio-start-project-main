@@ -26,15 +26,24 @@ export const Contact: React.FC = () => {
                     console.log('FAILED...', error.text);
                 }
             );
+
+        e.target.reset();
     };
+    
     return (
         <S.Contacts id={'contact'}>
             <Container>
                 <SectionTitle>Contact</SectionTitle>
                 <S.Form ref={form} onSubmit={sendEmail}>
-                    <S.Field placeholder={'name'} name={'user_name'} />
-                    <S.Field placeholder={'subject'} name={'subject'} />
+                    <S.Field required placeholder={'name'} name={'user_name'} />
+                    <S.Field required placeholder={'email'} name={'email'} />
                     <S.Field
+                        required
+                        placeholder={'subject'}
+                        name={'subject'}
+                    />
+                    <S.Field
+                        required
                         as={'textarea'}
                         placeholder={'message'}
                         name={'message'}
