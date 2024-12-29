@@ -17,7 +17,7 @@ const mokeText: string =
 const skillsData: Array<SkillsDataType> = [
     {
         iconId: 'tag',
-        title: 'css3',
+        title: 'html5',
         text: mokeText,
     },
     {
