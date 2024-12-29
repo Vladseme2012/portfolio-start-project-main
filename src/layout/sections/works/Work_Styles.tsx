@@ -100,6 +100,10 @@ const Text = styled.p`
 
 //tabMenu
 const TabMenu = styled.nav`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     ul {
         max-width: 352px;
         width: 100%;
