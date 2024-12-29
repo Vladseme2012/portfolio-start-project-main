@@ -5,7 +5,7 @@ export const Link = styled.a<{ active?: boolean }>`
     position: relative;
     padding: 10px;
     font-weight: 400;
-    font-style: 14px;
+    font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
     z-index: 0;
