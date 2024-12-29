@@ -13,7 +13,8 @@ export const theme = {
         mobile: 'screen and (max-width: 576px)',
         desktop: 'screen and (min-width: 1140px)',
     },
+
     animations: {
-        transition: '0.2s ease-in-out',
+        transition: '0.3s ease-in-out',
     },
 };
