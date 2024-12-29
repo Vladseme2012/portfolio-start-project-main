@@ -6,7 +6,7 @@ export const MobileMenu: React.FC = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
 
     const burgerClickHandler = () => {
-        setMenuIsOpen(!setMenuIsOpen);
+        setMenuIsOpen(!menuIsOpen);
     };
 
     return (
@@ -15,12 +15,7 @@ export const MobileMenu: React.FC = () => {
                 <span></span>
             </S.BurgerButton>
 
-            <S.MobileMenuPopup
-                isOpen={menuIsOpen}
-                onClick={() => {
-                    setMenuIsOpen(false);
-                }}
-            >
+            <S.MobileMenuPopup isOpen={menuIsOpen} onClick={burgerClickHandler}>
                 <Menu />
             </S.MobileMenuPopup>
         </S.MobileMenu>
