@@ -19,7 +19,7 @@ export const Menu: React.FC = () => {
                         smooth={true}
                         activeClass={'active'}
                         spy={true}
-                        offset={50}
+                        offset={-35}
                     >
                         {item.title}
                         <S.Mask>
