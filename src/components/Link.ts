@@ -18,7 +18,7 @@ export const Link = styled.a<{ active?: boolean }>`
 
     &::before {
         display: inline-block;
-        color: ${theme.colors.accent};
+        background-color: ${theme.colors.accent};
         position: absolute;
         left: 0;
         right: 0;
