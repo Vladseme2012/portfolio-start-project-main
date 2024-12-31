@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade } from 'react-awesome-reveal';
+import { Fade, Slide } from 'react-awesome-reveal';
 import { Container } from '../../../components/Container';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { SectionTitle } from '../../../components/SectionTitle';
@@ -53,7 +53,7 @@ export const Skills: React.FC = () => {
             <Container>
                 <SectionTitle>My Skills</SectionTitle>
                 <FlexWrapper wrap={'wrap'} justify={'space-between'}>
-                    <Fade cascade={true} damping={0.2}>
+                    <Fade cascade damping={0.2}>
                         {skillsData.map((skill, index) => (
                             <Skill
                                 key={index}
