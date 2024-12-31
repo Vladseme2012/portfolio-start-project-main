@@ -10,6 +10,7 @@ import { Slogan } from './layout/sections/slogan/Slogan';
 import { Footer } from './layout/footer/Footer';
 import { GoToBtn } from './components/goTopBtn/GoToBtn';
 
+
 function App() {
     return (
         <div className="App">
