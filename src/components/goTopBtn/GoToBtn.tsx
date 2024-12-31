@@ -7,13 +7,19 @@ export const GoToBtn: React.FC = () => {
     const [showBtn, setShowBtn] = useState(false);
 
     useEffect(() => {
-        window.addEventListener('scroll', () => {
-            if (window.screenY > 200) {
-                setShowBtn(!showBtn);
+        let scrollToClick = () => {
+            if (window.scrollY > 200) {
+                setShowBtn(true);
             } else {
-                setShowBtn(!showBtn);
+                setShowBtn(false);
             }
-        });
+        };
+
+        window.addEventListener('scroll', scrollToClick);
+        
+        return () => {
+          window.removeEventListener('scroll', scrollToClick)
+        };
     }, []);
 
     return (
