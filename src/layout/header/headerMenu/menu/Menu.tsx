@@ -9,7 +9,9 @@ const itemsLink = [
     { title: 'Contact', href: 'contact' },
 ];
 
-export const Menu: React.FC = () => {
+export const Menu: React.FC<{
+    setMenuIsOpen?: (isOpen: boolean) => void;
+}> = (props) => {
     return (
         <S.List>
             {itemsLink.map((item, index) => (
@@ -20,6 +22,7 @@ export const Menu: React.FC = () => {
                         activeClass={'active'}
                         spy={true}
                         offset={-35}
+                        onClick={() => props.setMenuIsOpen?.(false)}
                     >
                         {item.title}
                         <S.Mask>
